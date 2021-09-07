@@ -1,0 +1,1 @@
+cat examples/custom/sample0.txt | python run_plugin.py whoshouldicall -mute

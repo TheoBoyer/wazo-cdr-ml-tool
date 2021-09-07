@@ -1,0 +1,1 @@
+cat $1 | python run_plugin.py willyoupickup -mute
