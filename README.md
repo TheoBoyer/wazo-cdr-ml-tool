@@ -31,7 +31,14 @@ The columns are the following:
 - source_user_uuid | *string* | Caller uuid  
 - source_line_id | *integer* | Id of the caller line  
 
-# Create your task
-You can create a new task by providing input features and providing output target. See examples in the [task](./tasks) folder
+## Create your task
+You can create a new task by providing input features and providing output target. See examples in the [tasks](./tasks) folder.
 
-Then you can run pre-made model on this task that have already been optimised to deal with CDR data with
+## Run existing models on it
+You can then run pre-made model on this task that have already been optimised to deal with CDR data. The models are in the [models](./models) folder.
+You can run the model of your choice with `python make.py {model name} {task name}`
+You will find a pre-made package in the [output](./output) folder including:
+* A command line tool that takes input from stdin (`main.py`)
+* A flask api to interact with the model
+* Hand-made plugins that uses the models to work (available in `package/plugins`)
+* 
